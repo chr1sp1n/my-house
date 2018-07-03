@@ -1,0 +1,14 @@
+house
+  |_ Name
+  |_ Description
+  |_
+  |_ ...
+  |_ rooms
+      |_ Name
+      |_ Description
+      |_ Owner
+      |_ ...
+      |_ CS_DVC
+          |_ CS_CMD
+              |_ Request
+              |_ Response
