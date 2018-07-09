@@ -16,3 +16,10 @@ regions:
   user: "User"
   content: 'Content'
   footer: 'Footer'
+
+# dependencies:
+#     - core/jquery
+#     - core/jquery.once
+#     - core/drupal
+#     - core/drupal.ajax
+#     - core/drupalSettings
