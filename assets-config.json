@@ -1,0 +1,30 @@
+{
+	"deploy_path_dev":		"../../web/themes/custom/my_house",
+	"source":{
+		"path":				"../../theme-source",
+		"scss":{
+			"src":			"{{source.path}}/scss",
+			"dest":			"{{temp_path}}/global-library/css"
+		},
+		"js":{
+			"src":			"{{source.path}}/js",
+			"dest":			"{{temp_path}}/global-library/js",
+			"cocat_to":		"scripts.js"
+		}
+	},
+
+	"db":{
+		"host": "localhost",
+		"database": "drupal_myhouse",
+		"user": "drupal_myhouse",
+		"password": "fJiojuUg5CuVobkY",
+		"dest": "../db-dump"
+	},
+	"site":{
+		"type":"drupal",
+		"hosts":{
+			"dev": "http://my-house.local",
+			"dist": "http://my-house.chr1sp1n-dev.cloud"
+		}
+	}
+}

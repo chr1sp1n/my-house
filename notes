@@ -1,14 +1,37 @@
+
+Project update:
+  https://github.com/drupal-composer/drupal-project
+
+
+Site structure and contents:
+
 house
-  |_ Name
-  |_ Description
-  |_
-  |_ ...
-  |_ rooms
-      |_ Name
-      |_ Description
-      |_ Owner
-      |_ ...
-      |_ CS_DVC
-          |_ CS_CMD
-              |_ Request
-              |_ Response
+|__ Name
+|__ Description
+|__ Images
+|__ Utenze
+|   |__ Utenza 1
+|   |__ ...
+|
+|__ Address
+|__ Geo Locate
+|__ ...
+    |__ rooms
+        |__ Name
+        |__ Description
+        |__ Images
+        |__ Owner
+        |__ ...
+        |__ CS_DVC
+            |__ CS_CMD
+                |__ Request
+                |__ Response
+
+Login
+  |
+Homepage  (mostra la struttura della casa)
+| | | |__ Room ( dettaglio di una stanza )
+| | |____ Utenze
+| |______
+|________
+

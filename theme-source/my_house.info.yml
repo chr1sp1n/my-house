@@ -1,0 +1,18 @@
+name: 'My House'
+version: 1.0.0
+type: theme
+description: 'My House custom theme'
+package: 'chr1sp1n-dev'
+core: 8.x
+# libraries:
+#   - millefili/global-library
+
+base theme: bartik
+#Using Classy as a base theme https://www.drupal.org/theme-guide/8/classy
+
+regions:
+  brand: "Brand"
+  navbar: 'Navbar'
+  user: "User"
+  content: 'Content'
+  footer: 'Footer'
