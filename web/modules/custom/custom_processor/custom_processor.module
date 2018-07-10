@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains custom_processor.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function custom_processor_help($route_name, RouteMatchInterface $route_match) {
+	switch ($route_name) {
+		// Main module help for the custom_processor module.
+		case 'help.page.custom_processor':
+			$output = '';
+			$output .= '<h3>' . t('About') . '</h3>';
+			$output .= '<p>' . t('Custom processor') . '</p>';
+			return $output;
+
+		default:
+	}
+}
+
+/**
+ * Implements hook_views_pre_view().
+ */
+function custom_processor_views_pre_view($view, $display_id, array &$args) {
+  if ($view->id() !== 'user_admin_people') return;
+
+  $user_roles = \Drupal::currentUser()->getRoles();
+  if (!in_array('csbus_admin', $user_roles)) {
+    $view->removeHandler($display_id, 'field', 'field_cs_dvc');
+  }
+}
